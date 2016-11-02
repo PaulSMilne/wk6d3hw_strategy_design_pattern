@@ -1,6 +1,6 @@
 public class DealCanasta implements Deal {
      @Override
-     public int discardPile (int numberOfHands, int deckSize);{
-          return deckSize - (numberOfHands * 13);
+     public int drawPile (int numberOfHands);{
+          return 108 - (numberOfHands * 13);
      }
 }
