@@ -1,4 +1,4 @@
 public interface Deal {
-     public int dealCards(int cardsInHand);
+     public int discardPile (int numberOfHands, deckSize);
 }
 //This class represents the Strategy class in a Strategy design pattern
