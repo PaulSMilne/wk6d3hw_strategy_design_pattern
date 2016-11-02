@@ -1,14 +1,14 @@
 public class GamePatternDemo {
-     public static main(String[] args) {
-          
-          Hand hand = new Hand(new DealBriscola());
-          System.out.println(hand.cardsDeal(5));
+     public static void main(String[] args) {
 
-          hand = newHand(newDealPoker());
-          System.out.println(hand.cardsDeal(6));
+          Hand hand = new Hand(new DealBriscola());
+          System.out.println("Draw pile is " + hand.cardsDeal(5) + " cards.");
+
+          hand = new Hand(new DealPoker());
+          System.out.println("Draw pile is " + hand.cardsDeal(6) + " cards.");
 
           hand = new Hand(new DealCanasta());
-          System.out.println(hand.cardsDeal(4));
+          System.out.println("Draw pile is " + hand.cardsDeal(4) + " cards.");
      }
 
 }

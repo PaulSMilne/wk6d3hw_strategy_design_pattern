@@ -6,6 +6,6 @@ public class Hand {
      }
 
      public int cardsDeal(int numberOfHands){
-          return deal.discardPile(numberOfHands);
+          return deal.drawPile(numberOfHands);
      }
 }
